@@ -10,6 +10,10 @@ import java.util.List;
 public class PersonService {
     private PersonRepo repo;
 
+    public PersonService(PersonRepo repo) {
+        this.repo = repo;
+    }
+
     public List<Person> getAllPerson(){
         return this.repo.findAll();
     }
