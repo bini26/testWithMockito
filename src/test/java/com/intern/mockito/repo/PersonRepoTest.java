@@ -13,14 +13,15 @@ class PersonRepoTest {
 
     @Autowired
     private PersonRepo repo;
+
     @Test
     void isPersonExistById() {
 //        Person person = new Person(101,"Binod Pandey","Badera");
 //        repo.save(person);
 
-       Boolean actualResult = repo.isPersonExistById(101);
+        Boolean actualResult = repo.isPersonExistById(101);
 
-       Assertions.assertThat(actualResult).isTrue();
+        Assertions.assertThat(actualResult).isTrue();
 
     }
 }
